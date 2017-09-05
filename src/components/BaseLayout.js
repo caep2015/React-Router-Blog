@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
+import '../styles/BaseLayout.css'
 import {NavLink} from 'react-router-dom'
-
 
 export default class BaseLayout extends Component {
   render () {
@@ -11,9 +11,10 @@ export default class BaseLayout extends Component {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <NavLink exact to='/' activeStyle={{color: "#52aefd"}} className="navbar-brand">React Blog</NavLink>
+            <NavLink exact to='/' activeStyle={{
+              color: "#52aefd"}} className="navbar-brand">React Blog</NavLink>
             <div className="navbar-nav">
-              <NavLink to='/create' activeClassName='selected'className="nav-item nav-link">Create Post</NavLink>
+              <NavLink to='/create' activeClassName='selected' className="nav-item nav-link">Create Post</NavLink>
               <NavLink to='/show' activeClassName='selected' className="nav-item nav-link">Show All Posts</NavLink>
             </div>
           </div>
@@ -21,7 +22,7 @@ export default class BaseLayout extends Component {
         {this.props.children}
         <div className='footer'>
           <nav className="navbar navbar-light bg-faded">
-            <h1 className="navbar-brand mb-0">Carlota Pearl | Copyright 2017</h1>
+            <h1 className="navbar-brand mb-0">Carlota Pearl | 2017</h1>
           </nav>
         </div>
       </div>
