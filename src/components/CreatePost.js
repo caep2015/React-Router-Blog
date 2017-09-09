@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import '../styles/CreatePost.css'
 
 export default class CreatePost extends Component {
     constructor (props) {
@@ -48,7 +49,7 @@ export default class CreatePost extends Component {
   render () {
     return (
       <div className='create-post'>
-      <img className="card-img-top" src={require('../images/thoughts.jpg')} alt="thoughts" style={{width: "20%", borderRadius: "5px"}}/>
+      <img className="card-img-top" src={require('../images/blog-create.jpg')} alt="thoughts" style={{width: "50%", borderRadius: "5px"}}/>
         <form onSubmit={this.handleSubmit}>
           <div className="form-group">
             <label htmlFor="formGroupExampleInput">Author&apos;s Name:</label>
